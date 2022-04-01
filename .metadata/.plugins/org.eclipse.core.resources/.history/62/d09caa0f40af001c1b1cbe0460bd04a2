@@ -1,0 +1,12 @@
+package builder;
+
+public class BuilderGarage extends BuilderImmobile {
+	private String gateType ;
+	
+	public IBuilderImmobile gateType (String gateType) {
+		this.gateType=gateType;
+		return this ;
+		
+	}
+
+}

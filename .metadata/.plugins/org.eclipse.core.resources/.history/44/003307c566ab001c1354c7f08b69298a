@@ -1,0 +1,146 @@
+import entity.*;
+
+public class BuilderEstate implements Ibuilder {
+	Villa villa ;
+	Garage garage ;
+	Apartment apartment ;
+	Address adress;
+	
+	public BuilderEstate() {
+		villa=new Villa();
+		garage= new Garage();
+		apartment= new Apartment();
+		adress= new Address();
+	}
+
+	@Override
+	public Ibuilder setSurfaceVilla(int surface) {
+		villa.setSurface(surface);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setLocalNumberVilla(int localNumber) {
+		villa.setLocalNumber(localNumber);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setFloorVilla(int floor) {
+		villa.setFloor(floor);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setAddressVilla(Address address) {
+		villa.setAddress(address);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setSurfaceGarage(int surface) {
+		garage.setSurface(surface);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setLocalNumberGarage(int localNumber) {
+		garage.setLocalNumber(localNumber);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setFloorGarage(int floor) {
+		garage.setFloor(floor);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setAddressGarage(Address address) {
+		garage.setAddress(address);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setSurfaceApartment(int surface) {
+		apartment.setSurface(surface);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setLocalNumberApartment(int localNumber) {
+		apartment.setLocalNumber(localNumber);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setFloorApartment(int floor) {
+		apartment.setFloor(floor);
+		return this;
+	}
+
+
+
+	@Override
+	public Garage builGarage() {
+		// TODO Auto-generated method stub
+		return garage;
+	}
+
+	@Override
+	public Apartment buildApartment() {
+		// TODO Auto-generated method stub
+		return apartment;
+	}
+
+	@Override
+	public Ibuilder setStreet(String street) {
+		adress.setStreet(street);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setCity(String city) {
+		adress.setCity(city);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setProvince(String province) {
+		adress.setProvince(province);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setRegion(String region) {
+		adress.setRegion(region);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setCap(int cap) {
+		adress.setCap(cap);
+		return this;
+	}
+
+	@Override
+	public Ibuilder setAddressApartment(Address address) {
+		apartment.setAddress(address);
+		return this;
+	}
+
+	@Override
+	public Villa buildVilla() {
+		// TODO Auto-generated method stub
+		return villa;
+	}
+
+	@Override
+	public Address buildAdress() {
+		// TODO Auto-generated method stub
+		return adress;
+	}
+
+	
+
+}

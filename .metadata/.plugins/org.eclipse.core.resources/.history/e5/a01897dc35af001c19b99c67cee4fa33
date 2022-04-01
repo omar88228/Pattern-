@@ -1,0 +1,13 @@
+package omar;
+
+public class persone {
+	int age ;
+	int name ;
+	public persone(int age, int name) {
+		super();
+		this.age = age;
+		this.name = name;
+	}
+	
+
+}

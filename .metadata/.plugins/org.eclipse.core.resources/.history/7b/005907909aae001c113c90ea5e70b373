@@ -1,0 +1,27 @@
+package entity;
+
+import java.util.Arrays;
+
+import enumeration.Type;
+
+public class Immobile implements IEstate {
+	private int surface;
+	private Address address;
+	private Type type ;
+	private int localNumber ;
+
+
+	
+
+	@Override
+	public String toString() {
+		return "Immobile [type=" + type + "]";
+	}
+
+	@Override
+	public String estateType() {
+		// TODO Auto-generated method stub
+		return " immobile type : "+this.type.name();
+	}
+
+}

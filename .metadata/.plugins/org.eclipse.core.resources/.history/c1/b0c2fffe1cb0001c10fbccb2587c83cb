@@ -1,0 +1,24 @@
+package abstrctFactory;
+
+import entity.Animale;
+import entity.Impiegato;
+import entity.Persona;
+import entity.Studente;
+
+public class FactoryPersona extends AbstractFactory {
+
+	@Override
+	public Persona getPersona() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Animale getAnimale() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+}

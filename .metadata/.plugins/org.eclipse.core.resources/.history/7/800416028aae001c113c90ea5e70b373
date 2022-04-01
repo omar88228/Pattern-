@@ -1,0 +1,11 @@
+package entity;
+
+public class Villa extends Immobile {
+	
+	private int numberOfSwimmingpools;
+	private String gateType ;
+	public Villa() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

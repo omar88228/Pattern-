@@ -1,0 +1,9 @@
+package builder;
+
+public class Builder  implements IBuilder {
+
+	public Builder()  {
+		
+	}
+
+}

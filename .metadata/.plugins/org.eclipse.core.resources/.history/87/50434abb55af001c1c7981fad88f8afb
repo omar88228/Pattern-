@@ -1,0 +1,15 @@
+package factory;
+
+import builder.BuilderImmobile;
+import entity.Address;
+
+public class FactoryImmobile implements IFactoryImmobile {
+
+	@Override
+	public BuilderImmobile getBuilder(int surface, int localNumber, Address address, String type, int floor,
+			int numberOfSwimmingpools, String gateType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

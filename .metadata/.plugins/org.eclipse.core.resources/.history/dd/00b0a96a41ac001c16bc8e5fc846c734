@@ -1,0 +1,25 @@
+package builder;
+
+import entity.Address;
+import entity.Apartment;
+import entity.Garage;
+import entity.IEstate;
+import entity.Villa;
+
+public interface IBuilder {
+	
+	IBuilder setSurface(int surface);
+
+	IBuilder setLocalNumber(int localNumber);
+
+	IBuilder setFloor(int floor);
+
+
+	IBuilder setAddress(Address address);
+
+
+	Apartment  buildApartment();
+	Villa buildVilla();
+	Garage buildGarage();
+	
+}

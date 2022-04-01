@@ -1,0 +1,25 @@
+package entity;
+
+public class Appartment extends Immobile {
+	private int floor;
+
+	public Appartment(int floor) {
+		super();
+		this.floor = floor;
+	}
+
+	public int getFloor() {
+		return floor;
+	}
+
+	public void setFloor(int floor) {
+		this.floor = floor;
+	}
+
+	@Override
+	public String estateType() {
+
+		return super.estateType() + " the floor number is : " + this.floor;
+	}
+
+}

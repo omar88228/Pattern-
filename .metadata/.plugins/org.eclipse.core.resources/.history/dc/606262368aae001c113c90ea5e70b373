@@ -1,0 +1,16 @@
+package Builder;
+
+public class GarageBuilder extends AbstractBuilder<GarageBuilder> {
+	private String gateType ;
+	
+	public void setGateType(String gateType) {
+		this.gateType = gateType;
+	}
+
+	@Override
+	public GarageBuilder getThis() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+	
+}

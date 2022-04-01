@@ -1,0 +1,18 @@
+package entity;
+
+public class Pesce extends Persona{
+	
+	private String azienda ;
+	
+	public Pesce(int eta, String nome,String azienda) {
+		super(eta, nome);
+		this.azienda=azienda;
+	}
+
+	@Override
+	public void infoGeneraly() {
+		System.out.println("il nome del impiegato è : " + this.getNome() + "l'eta è : "+this.getEta() + "la sua azienda si chiama : "+this.azienda);
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package omar;
+
+public class ProfessionBuilders {
+
+    /**
+     * Static factory methods
+     */
+    public static EngineerBuilder newEngineer() {
+        return new EngineerBuilder();
+    }
+
+    public static PilotBuilder newPilot() {
+        return new PilotBuilder();
+    }

@@ -1,0 +1,44 @@
+package Builder;
+
+import entity.Address;
+import entity.Garage;
+import entity.Immobile;
+import entity.Villa;
+import enumeration.Type;
+
+public class BuilderVilla extends AbstractBuilder<BuilderVilla> {
+	
+	Villa villa ;
+
+	public BuilderVilla() {
+		super();
+		villa= new Villa();
+		
+	}
+
+	public BuilderVilla numberOfSwimmingpools(int numberOfSwimmingpools) {
+
+		villa.setNumberOfSwimmingpools(numberOfSwimmingpools);
+		return this;
+	}
+
+	public BuilderVilla gateType(String gateType) {
+
+		this.gateType=gateType;
+		return getThis();
+	}
+
+	
+	@Override
+	public BuilderVilla getThis() {
+
+		return this;
+	}
+
+	
+	public Villa build() {
+		// TODO Auto-generated method stub
+		return new Villa(numberOfSwimmingpools,gateType);
+	}
+
+}

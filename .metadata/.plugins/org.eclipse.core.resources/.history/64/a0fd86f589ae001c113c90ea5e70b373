@@ -1,0 +1,9 @@
+package entity;
+
+public class Villa extends Immobile {
+
+	public Villa() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

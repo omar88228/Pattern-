@@ -1,0 +1,9 @@
+package entity;
+
+public class Garage  extends Immobile {
+	private String gateType ;
+	public Garage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

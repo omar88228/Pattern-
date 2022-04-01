@@ -1,0 +1,14 @@
+package prove;
+
+public class Studente extends Persona {
+	
+	int matricola ;
+
+	public Studente(int matricola) {
+		super();
+		this.matricola= matricola ;
+	}
+	
+	
+	
+}

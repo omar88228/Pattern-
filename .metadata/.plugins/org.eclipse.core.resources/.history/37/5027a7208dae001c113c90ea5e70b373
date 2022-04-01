@@ -1,0 +1,11 @@
+package Builder;
+
+public class BuilderVilla extends AbstractBuilder<BuilderVilla> {
+
+	@Override
+	public BuilderVilla build() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+
+}

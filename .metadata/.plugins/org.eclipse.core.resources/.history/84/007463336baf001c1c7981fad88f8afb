@@ -1,0 +1,67 @@
+package builder;
+
+import entity.*;
+import enumeration.Type;
+
+public class BuilderImmobile <T extends Immobile> implements IBuilderImmobile <T> {
+	private int surface;
+	private int localNumber;
+	private int numberOfSwimmingpools;
+	private int floor;
+	private String gateType ;
+	private Address address;
+	private Type type;
+	private T t  ;
+	@Override
+	public IBuilderImmobile <T> surface(int surface) {
+		
+		return this;
+	}
+
+	@Override
+	public IBuilderImmobile <T> localNumber(int localNumber) {
+		this.localNumber=localNumber;
+		return this;
+	}
+
+	@Override
+	public IBuilderImmobile <T> floor(int floor) {
+		this.floor=floor;
+		return this;
+	}
+
+	@Override
+	public IBuilderImmobile <T> address(Address address) {
+		this.address=address;
+		return this;
+	}
+
+	@Override
+	public IBuilderImmobile <T> type(String type) {
+		this.type=Type.valueOf(type);
+		return this;
+	}
+
+	@Override
+	public IBuilderImmobile <T> numberOfSwimmingpools(int numberOfSwimmingpools) {
+		this.numberOfSwimmingpools=numberOfSwimmingpools;
+		return this;
+	}
+
+	@Override
+	public IBuilderImmobile <T> gateType(String gateType) {
+		this.gateType=gateType;
+		return this;
+	}
+
+	@Override
+	public T buildVilla() {
+		return t = new Villa(numberOfSwimmingpools, gateType, surface, localNumber, address, type);
+	}
+
+
+
+
+
+
+}

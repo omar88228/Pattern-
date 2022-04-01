@@ -1,0 +1,24 @@
+package Builder;
+
+import entity.Villa;
+
+public class BuilderVilla extends AbstractBuilder<BuilderVilla> {
+
+	private Villa villa ;
+	
+	
+		
+	public BuilderVilla() {
+		villa = new Villa();
+		super();
+	}
+
+
+
+	@Override
+	public BuilderVilla build() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+
+}

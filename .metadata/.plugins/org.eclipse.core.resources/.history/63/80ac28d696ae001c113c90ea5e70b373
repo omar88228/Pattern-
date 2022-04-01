@@ -1,0 +1,23 @@
+package entity;
+
+public class Villa extends Immobile {
+	
+	private int numberOfSwimmingpools;
+	private String gateType ;
+	
+	public Villa() {
+		super();
+	}
+	public void setNumberOfSwimmingpools(int numberOfSwimmingpools) {
+		this.numberOfSwimmingpools = numberOfSwimmingpools;
+	}
+	public void setGateType(String gateType) {
+		this.gateType = gateType;
+	}
+	@Override
+	public String estateType() {
+		// TODO Auto-generated method stub
+		return super.estateType()+" the gate type is : "+this.gateType +" and the number of swimming pool is : "+this.numberOfSwimmingpools;
+	}
+	
+}

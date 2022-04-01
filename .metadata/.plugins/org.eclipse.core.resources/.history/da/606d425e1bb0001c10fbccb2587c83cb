@@ -1,0 +1,19 @@
+package entity;
+
+public abstract class Animale {
+	private String name ;
+	
+	public Animale(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public abstract void infoGenerali();
+}

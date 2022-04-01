@@ -1,0 +1,9 @@
+package omar;
+
+public class persone {
+	int age ;
+	int name ;
+	
+	
+
+}

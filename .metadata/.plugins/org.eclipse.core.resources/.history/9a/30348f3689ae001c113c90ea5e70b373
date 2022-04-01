@@ -1,0 +1,5 @@
+package Builder;
+
+public class GarageBuilder extends AbstractBuilder<T> {
+
+}

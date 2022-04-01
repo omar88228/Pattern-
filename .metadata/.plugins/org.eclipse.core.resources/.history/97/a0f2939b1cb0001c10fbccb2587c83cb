@@ -1,0 +1,9 @@
+package abstrctFactory;
+
+import entity.Persona;
+
+public abstract class AbstractFactory {
+	
+	public abstract Persona getPersona();
+
+}

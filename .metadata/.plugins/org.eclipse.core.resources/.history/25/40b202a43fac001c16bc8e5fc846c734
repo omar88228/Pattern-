@@ -1,0 +1,33 @@
+package app;
+
+import java.util.ArrayList;
+
+import entity.*;
+import enumeration.Type;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 int surface;
+		 int localNumber;
+		private int floor;
+//		private Address address;
+		private Type type ;
+		Singleton sing = Singleton.getSingleton();
+		ArrayList<String> attributeList = sing.getLista();
+		FactoryEstate factory = new FactoryEstate();
+
+		for (int i = 1; i < attributeList.size(); i++) {
+			String[] attributes = attributeList.get(i).split(",");
+			
+			String address = attributes[0];
+			
+			
+			
+			IEstate estate = factory.getEstate(attributes[attributes.length - 1], attributes);
+			System.out.println(estate.estateType());
+		}
+
+	}
+
+}

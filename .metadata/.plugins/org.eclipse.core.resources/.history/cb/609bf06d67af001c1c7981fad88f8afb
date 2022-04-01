@@ -1,0 +1,20 @@
+package builder;
+
+
+import entity.Address;
+import entity.Immobile;
+
+public interface IBuilderAddress <T extends Immobile>{
+	
+	IBuilderAddress <T> street(String street);
+
+	IBuilderAddress <T> city(String city);
+
+	IBuilderAddress <T> province(String province);
+
+	IBuilderAddress <T> region(String region);
+
+	T cap(int cap);
+
+	Address build();
+}

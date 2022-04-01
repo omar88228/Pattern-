@@ -1,0 +1,70 @@
+package builder;
+
+import entity.*;
+
+public class BuilderImmobile  implements IBuilderImmobile {
+
+	@Override
+	public IBuilderImmobile surface(int surface) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilderImmobile localNumber(int localNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilderImmobile floor(int floor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilderImmobile address(Address address) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilderImmobile type(String type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilderImmobile numberOfSwimmingpools(int numberOfSwimmingpools) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilderImmobile gateType(String gateType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Villa buildVilla() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Garage buildGarage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Appartment buildAppartment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+}

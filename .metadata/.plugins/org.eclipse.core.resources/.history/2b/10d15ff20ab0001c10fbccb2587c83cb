@@ -1,0 +1,5 @@
+package methodeFactory;
+
+public class FactoryPersona implements IFactory {
+
+}

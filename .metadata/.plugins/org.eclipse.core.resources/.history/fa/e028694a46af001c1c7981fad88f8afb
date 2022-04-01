@@ -1,0 +1,21 @@
+package builder;
+
+import entity.*;
+
+public interface IBuilderImmobile {
+	
+	IBuilderImmobile surface(int surface);
+
+	IBuilderImmobile localNumber(int localNumber);
+
+    IBuilderImmobile address(Address address);
+
+	IBuilderImmobile type(String type);
+
+	Villa buildVilla();
+	
+	Garage buildGarage();
+	
+	Appartment buildAppartment();
+	
+}

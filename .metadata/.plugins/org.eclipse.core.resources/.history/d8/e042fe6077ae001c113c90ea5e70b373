@@ -1,0 +1,16 @@
+package omar;
+
+static class PilotBuilder extends AbstractProfessionBuilder<PilotBuilder, Pilote> {
+
+    private String language;
+
+    public PilotBuilder language(String language) {
+        this.language = language;
+        return this;
+    }
+
+    @Override
+    protected Pilot internalBuild() {
+        return new Pilot(this.name, this.salary, this.duties, this.language);
+    }
+}

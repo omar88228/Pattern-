@@ -1,0 +1,48 @@
+package app;
+
+import entity.*;
+
+public interface Ibuilder {
+
+	IBuilder setSurfaceVilla(int surface);
+
+	IBuilder setLocalNumberVilla(int localNumber);
+
+	IBuilder setFloorVilla(int floor);
+
+	IBuilder setAddressVilla(Address address);
+
+	IBuilder setSurfaceGarage(int surface);
+
+	IBuilder setLocalNumberGarage(int localNumber);
+
+	IBuilder setFloorGarage(int floor);
+
+	IBuilder setAddressGarage(Address address);
+
+	IBuilder setSurfaceApartment(int surface);
+
+	IBuilder setLocalNumberApartment(int localNumber);
+
+	IBuilder setFloorApartment(int floor);
+
+	IBuilder setStreet(String street);
+
+	IBuilder setCity(String city);
+
+	IBuilder setProvince(String province);
+
+	IBuilder setRegion(String region);
+
+	IBuilder setCap(int cap);
+
+	IBuilder setAddressApartment(Address address);
+
+	Villa buildVilla();
+
+	Garage builGarage();
+
+	Apartment buildApartment();
+
+	Address buildAdress();
+}

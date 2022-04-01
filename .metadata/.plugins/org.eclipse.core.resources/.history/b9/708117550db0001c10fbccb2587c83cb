@@ -1,0 +1,16 @@
+package app;
+
+import methodeFactory.FactoryPersona;
+import util.View;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String typoPersona = View.getStringNotNull("inserisci typo della persona impiegato o studente");
+		String nome =View.getStringNotNull("inserisci il nome ");
+		String eta =  View.getStringNotNull("inserisci l'eta ");
+		FactoryPersona factoryPersona = new FactoryPersona();
+
+	}
+
+}

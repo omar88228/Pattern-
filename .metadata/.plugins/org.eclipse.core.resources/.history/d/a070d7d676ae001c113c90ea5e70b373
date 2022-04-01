@@ -1,0 +1,16 @@
+package omar;
+
+public class Pilote extends Profession {
+
+    private final String language;
+
+    public Pilote(String name, double salary, List<String> duties, String language) {
+        super(name, salary, duties);
+        this.language = language;
+    }
+
+    @Override
+    public void work() {
+        System.out.println("Flying the plane...");
+    }
+}

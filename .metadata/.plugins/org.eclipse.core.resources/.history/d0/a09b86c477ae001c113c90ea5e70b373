@@ -1,0 +1,54 @@
+package omar;
+
+import java.util.ArrayList;
+import java.util.List;
+
+abstract  class AbstractProfessionBuilder<SELF extends ProfessionBuilder<SELF, TTarget>,
+TTarget extends Profession> implements ProfessionBuilder<SELF, TTarget> {
+
+String name;
+
+double salary;
+
+List<String> duties = new ArrayList<>();
+
+@Override
+public SELF name(String name) {
+if (name == null || name.isEmpty()) {
+    throw new IllegalArgumentException("Name cannot be empty");
+}
+
+this.name = name;
+return self();
+}
+
+@Override
+public SELF salary(double salary) {
+if (salary < 0) {
+    throw new IllegalArgumentException("Salary cannot be smaller than 0");
+}
+
+this.salary = salary;
+return self();
+}
+
+@Override
+public SELF duty(String duty) {
+if (duty == null || duty.isEmpty()) {
+    throw new IllegalArgumentException("Duty cannot be empty");
+}
+
+duties.add(duty);
+return self();
+}
+
+public TTarget build() {
+return internalBuild();
+}
+
+protected abstract TTarget internalBuild();
+
+private SELF self() {
+return (SELF) this;
+}
+}

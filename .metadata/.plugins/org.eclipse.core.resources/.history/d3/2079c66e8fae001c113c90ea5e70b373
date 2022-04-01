@@ -1,0 +1,40 @@
+package Builder;
+
+import entity.Address;
+import entity.IEstate;
+import entity.Immobile;
+import enumeration.Type;
+
+public abstract class AbstractBuilder <T extends AbstractBuilder<T>>  implements IBuilder {
+	Immobile immobile ;
+	public AbstractBuilder()  {
+		immobile = new Immobile();
+	}
+	
+	@Override
+	public T Surface(int surface) {
+		immobile.setSurface(surface);
+		return build();
+	}
+	@Override
+	public T LocalNumber(int localNumber) {
+		immobile.setLocalNumber(localNumber);
+		return build();
+	}
+	
+	@Override
+	public T Address(Address address) {
+		immobile.setAddress(address);
+		return build();
+	}
+	@Override
+	public T type(String type) {
+		immobile.setType(Type.valueOf(type));
+		return build();
+	}
+	
+	public abstract T getThis();
+
+
+
+}

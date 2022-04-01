@@ -1,0 +1,26 @@
+package entity;
+
+import enumeration.Type;
+
+public class Garage extends Immobile {
+	private String gateType;
+
+	public Garage(int surface, int localNumber, Address address, Type type) {
+		super(surface, localNumber, address, type);
+		
+	}
+
+	public void setGateType(String gateType) {
+		this.gateType = gateType;
+	}
+
+	public String getGateType() {
+		return gateType;
+	}
+
+	@Override
+	public String estateType() {
+		return super.estateType() + " the gate type is : " + this.gateType;
+	}
+
+}

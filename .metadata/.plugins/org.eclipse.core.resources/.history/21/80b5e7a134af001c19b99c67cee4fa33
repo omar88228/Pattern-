@@ -1,0 +1,13 @@
+package builder;
+
+import entity.Address;
+import entity.IEstate;
+import entity.Immobile;
+import enumeration.Type;
+
+public class BuilderImmobile  implements IBuilderImmobile {
+
+
+
+
+}

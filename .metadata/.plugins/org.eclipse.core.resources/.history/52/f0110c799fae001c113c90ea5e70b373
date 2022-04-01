@@ -1,0 +1,29 @@
+package Builder;
+
+import entity.Garage;
+import entity.Immobile;
+
+public class BuilderGarage extends AbstractBuilder<BuilderGarage> {
+	
+	private Garage garage ;
+	
+	
+	public BuilderGarage() {
+		super();
+		garage= new Garage();
+	}
+	
+	public BuilderGarage gateType(String getGateType) {
+		garage.setGateType(getGateType);
+		return this;
+	}
+
+	@Override
+	public BuilderGarage getThis() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+
+	
+	
+}

@@ -1,0 +1,43 @@
+package Builder;
+
+import entity.Address;
+import entity.IEstate;
+import entity.Immobile;
+
+public class Builder  implements IBuilder {
+
+	public Builder()  {
+		
+	}
+
+	@Override
+	public IBuilder setSurface(int surface) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilder setLocalNumber(int localNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilder setFloor(int floor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBuilder setAddress(Address address) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Immobile buildApartment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,17 @@
+package entity;
+
+public class Mammifero extends Animale {
+	
+	private int numeroZampe ;
+	public Mammifero(String nome) {
+		super(nome);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void infoGenerali() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

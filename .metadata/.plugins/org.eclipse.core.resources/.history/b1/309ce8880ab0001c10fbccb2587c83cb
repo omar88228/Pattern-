@@ -1,0 +1,18 @@
+package entity;
+
+public class Studente extends Persona {
+	
+	private String nomeUniversita ;
+	
+	public Studente(int eta, String nome,String nomeUniversita) {
+		super(eta, nome);
+		this.nomeUniversita=nomeUniversita;
+	}
+
+	@Override
+	public void infoGeneraly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

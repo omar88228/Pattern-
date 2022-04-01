@@ -1,0 +1,21 @@
+package Builder;
+
+import entity.Address;
+
+import entity.Immobile;
+
+public interface IBuilder  <T extends AbstractBuilder<T>> {
+	
+	T Surface(int surface);
+
+	T LocalNumber(int localNumber);
+
+	
+
+   T Address(Address address);
+
+	T type(String type);
+	
+	
+	
+}

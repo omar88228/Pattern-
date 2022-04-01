@@ -1,0 +1,8 @@
+package factory;
+
+import builder.*;
+import entity.Address;
+
+public interface IFactoryImmobile {
+	BuilderImmobile getBuilder(int surface,int localNumber,Address address,String type,int floor,int numberOfSwimmingpools,String gateType);
+}

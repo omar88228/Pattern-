@@ -1,0 +1,10 @@
+package omar;
+
+public class studente extends persone {
+	int matricole ;
+	
+	
+
+	
+
+}

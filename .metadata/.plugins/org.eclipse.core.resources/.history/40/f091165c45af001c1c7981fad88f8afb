@@ -1,0 +1,12 @@
+package omar;
+
+public class main {
+
+	public static void main(String[] args) {
+		studente omar = new studente(20, 14, 1111);
+		persone difla= omar;
+		System.out.println(difla);
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package omar;
+
+public class studente extends persone {
+	int matricole ;
+
+	public studente(int matricole) {
+		super();
+		this.matricole=matricole;
+	}
+	
+	
+
+	
+
+}

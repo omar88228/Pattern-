@@ -1,0 +1,30 @@
+package app;
+
+import abstrctFactory.AbstractFactory;
+import abstrctFactory.FactoryCreator;
+import entity.Animale;
+import entity.Persona;
+import methodeFactory.FactoryPersona;
+import util.View;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		String typoPersona = View.getStringNotNull("inserisci typo della persona impiegato o studente");
+//		String nome =View.getStringNotNull("inserisci il nome ");
+//		int eta =  View.getIntNotNull("inserisci l'eta ");
+//		String organizzazione = View.getStringNotNull("inserisci l'organizzazione dove appartiene la persona");
+//		FactoryPersona factoryPersona = new FactoryPersona();
+//		Persona persona= factoryPersona.getPerona(typoPersona, nome, eta, organizzazione);
+//		persona.infoGeneraly();
+		
+		
+		   AbstractFactory factory = FactoryCreator.getFactory("animale");
+		   String typoAnimale =View.getStringNotNull("inserisci il nome ");
+		   String nome =View.getStringNotNull("inserisci il nome ");
+			int numero =  View.getIntNotNull("inserisci l'eta ");
+		   Animale animale= factory.getAnimale(nome, numero, typoAnimale);
+		   animale.infoGenerali();
+	}
+
+}

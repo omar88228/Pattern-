@@ -1,0 +1,28 @@
+package builder;
+
+import entity.Villa;
+
+public class BuilderVilla extends BuilderImmobile {
+	
+	private int numberOfSwimmingpools;
+	private String gateType ;
+	
+	public BuilderVilla() {
+		super();
+	}
+	
+	public IBuilderImmobile numberOfSwimmingpools(int numberOfSwimmingpools) {
+		this.numberOfSwimmingpools=numberOfSwimmingpools;
+		return this;	
+	}
+	public IBuilderImmobile gateType(String gateType) {
+		this.gateType=gateType;
+		return this;
+	}
+
+	@Override
+	public Villa buildVilla() {
+		return super.buildVilla();
+	}
+	
+}

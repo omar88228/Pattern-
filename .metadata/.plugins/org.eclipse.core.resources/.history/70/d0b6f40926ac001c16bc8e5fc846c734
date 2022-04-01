@@ -1,0 +1,21 @@
+package Builder;
+
+import entity.Address;
+
+import entity.IEstate;
+
+public interface IBuilder {
+	
+	IBuilder setSurface(int surface);
+
+	IBuilder setLocalNumber(int localNumber);
+
+	IBuilder setFloor(int floor);
+
+
+	IBuilder setAddress(Address address);
+
+
+	IEstate buildApartment();
+	
+}

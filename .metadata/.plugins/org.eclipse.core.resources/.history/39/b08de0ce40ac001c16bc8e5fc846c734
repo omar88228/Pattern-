@@ -1,0 +1,11 @@
+package builder;
+
+
+import entity.Address;
+
+public class BuilderAddress implements IBuilderAddress {
+	
+	Address address;
+
+
+}
