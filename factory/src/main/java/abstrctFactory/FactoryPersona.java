@@ -1,20 +1,16 @@
 package abstrctFactory;
 
 import entity.Animale;
-import entity.Impiegato;
-import entity.Mammifero;
-import entity.Persona;
-import entity.Pesce;
-import entity.Studente;
+import entity.*;
 
 public class FactoryPersona extends AbstractFactory {
 
 	@Override
-	public Persona getPersona(String TypoPersona,String nome ,int eta,String instituto) {
-		if (TypoPersona.equalsIgnoreCase("studente")) {
+	public Persona getPersona(String typoPersona,String nome ,int eta,String instituto) {
+		if (typoPersona.equalsIgnoreCase("studente")) {
 			return new Studente(eta, nome, instituto);
 		}
-		if(TypoPersona.equalsIgnoreCase("impiegato")) {
+		if(typoPersona.equalsIgnoreCase("impiegato")) {
 			return new Impiegato(eta, nome, instituto);
 		}
 		return null;

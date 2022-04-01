@@ -8,7 +8,7 @@ import entity.Pesce;
 public class FactoryPesce extends AbstractFactory{
 
 	@Override
-	public Persona getPersona(String TypoPersona, String nome, int eta, String instituto) {	
+	public Persona getPersona(String typoPersona, String nome, int eta, String instituto) {	
 		return null;
 	}
 
