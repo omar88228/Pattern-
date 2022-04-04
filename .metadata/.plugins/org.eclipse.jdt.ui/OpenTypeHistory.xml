@@ -6,4 +6,8 @@
     <typeInfo handle="=omar/src\/main\/java&lt;factory{IFactoryImmobile.java[IFactoryImmobile" modifiers="513" timestamp="1648554348510"/>
     <typeInfo handle="=factory/src\/main\/java&lt;methodeFactory{IFactory.java[IFactory" modifiers="513" timestamp="1648632517655"/>
     <typeInfo handle="=factory/src\/main\/java&lt;entity{Animale.java[Animale" modifiers="1025" timestamp="1648641332207"/>
+    <typeInfo handle="=Adapter/src\/main\/java&lt;entity{Vehicle.java[Vehicle" modifiers="513" timestamp="1648801507615"/>
+    <typeInfo handle="=Decorator/src\/main\/java&lt;decorator{PaninoDecorator.java[PaninoDecorator" modifiers="1" timestamp="1648821660484"/>
+    <typeInfo handle="=Bridge/src\/main\/java&lt;entity{CarColor.java[CarColor" modifiers="513" timestamp="1648822673777"/>
+    <typeInfo handle="=Bridge/src\/main\/java&lt;entity{Car.java[Car" modifiers="1025" timestamp="1648823342378"/>
 </typeInfoHistroy>

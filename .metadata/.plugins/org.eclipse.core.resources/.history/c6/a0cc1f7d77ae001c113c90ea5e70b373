@@ -1,5 +1,0 @@
-package omar;
-
-public class AbstractProfessionBuilder<T1, T2> {
-
-}

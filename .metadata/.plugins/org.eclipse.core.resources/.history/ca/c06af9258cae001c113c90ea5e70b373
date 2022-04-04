@@ -1,5 +1,0 @@
-package Builder;
-
-public class AppartmentBuilder extends AbstractBuilder<T> {
-
-}

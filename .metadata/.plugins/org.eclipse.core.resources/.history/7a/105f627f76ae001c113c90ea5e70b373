@@ -1,9 +1,0 @@
-package omar;
-
-public class Engineer {
-
-	public Engineer() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

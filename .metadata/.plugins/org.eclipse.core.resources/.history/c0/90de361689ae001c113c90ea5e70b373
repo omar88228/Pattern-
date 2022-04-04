@@ -1,5 +1,0 @@
-package Builder;
-
-public class VillaBuilder extends AbstractBuilder<T> {
-
-}
