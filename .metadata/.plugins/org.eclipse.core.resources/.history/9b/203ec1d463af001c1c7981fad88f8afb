@@ -1,9 +1,0 @@
-package prove;
-
-public class Studente extends Persona {
-	
-	int matricola ;
-	
-	
-	
-}

@@ -1,11 +1,12 @@
-package entity;
+package it.omar.entity;
 
 import java.io.Serializable;
 
 import javax.persistence.*;
 
-import enumeration.Type;
+import it.omar.enumeration.Type;
 @Entity
+@Table( name= "T_IMMOBILE")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="IMMOBILE_TYPE")
 public class Immobile implements IEstate,Serializable {
@@ -20,8 +21,8 @@ public class Immobile implements IEstate,Serializable {
 	private int localNumber;
     @Enumerated(EnumType.STRING)
 	private Type type;
-	@OneToOne
-	@JoinColumn(name = "ADDRESS_FK")
+    @Column(name="ADDRESS")
+    @Embedded
 	private Address address;
 	
 	public Immobile(int surface, int localNumber, Address address, Type type) {
@@ -30,6 +31,10 @@ public class Immobile implements IEstate,Serializable {
 		this.localNumber = localNumber;
 		this.address = address;
 		this.type = type;
+	}
+
+	public Immobile() {
+		super();
 	}
 
 	public int getSurface() {

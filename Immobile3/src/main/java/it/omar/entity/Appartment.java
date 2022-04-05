@@ -1,10 +1,10 @@
-package entity;
+package it.omar.entity;
 
 import java.io.Serializable;
 
 import javax.persistence.*;
 
-import enumeration.Type;
+import it.omar.enumeration.Type;
 @Entity
 @DiscriminatorValue("A")
 public class Appartment extends Immobile implements Serializable {
@@ -12,9 +12,12 @@ public class Appartment extends Immobile implements Serializable {
 	
 	@Column(name="FLOOR")
 	private int floor;
-
-	public Appartment(int surface, int localNumber, Address address, Type type) {
+	public Appartment() {
+		super();
+	}
+	public Appartment(int surface, int localNumber, Address address, Type type,int floor) {
 		super(surface, localNumber, address, type);
+		this.floor=floor;
 	}
 
 	public int getFloor() {

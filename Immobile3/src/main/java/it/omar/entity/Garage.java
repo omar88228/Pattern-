@@ -1,8 +1,9 @@
-package entity;
+package it.omar.entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import enumeration.Type;
+
+import it.omar.enumeration.Type;
 @Entity
 @DiscriminatorValue("G")
 public class Garage extends Immobile implements Serializable {
@@ -12,8 +13,13 @@ public class Garage extends Immobile implements Serializable {
 	@Column(name="GATETYPE")
 	private String gateType;
 
-	public Garage(int surface, int localNumber, Address address, Type type) {
+	public Garage() {
+		super();
+	}
+
+	public Garage(int surface, int localNumber, Address address, Type type,String gateType) {
 		super(surface, localNumber, address, type);	
+		this.gateType=gateType;
 	}
 
 	public void setGateType(String gateType) {

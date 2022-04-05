@@ -1,5 +1,0 @@
-package prove;
-
-public class Persona {
-	int eta ;
-}

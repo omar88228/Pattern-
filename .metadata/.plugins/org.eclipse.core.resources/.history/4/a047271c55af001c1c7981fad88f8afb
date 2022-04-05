@@ -1,7 +1,0 @@
-package factory;
-
-import builder.*;
-
-public interface IFactoryImmobile {
-	BuilderImmobile
-}

@@ -1,25 +1,19 @@
-package entity;
+package it.omar.entity;
 
-import java.io.Serializable;
 import javax.persistence.*;
-@Entity
-@Table( name= "T_ADDRESS")
-public class Address implements Serializable {
 
-	private static final long serialVersionUID = 7139861127077786486L;
-	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	@Column(name="ADDRESS_ID")
-	private int id ;
-	@Column(name="CAP")
+@Embeddable
+public class Address  {
+
+	
 	private int cap;
-	@Column(name="STREET")
+	
 	private String street;
-	@Column(name="CITY")
+	
 	private String city;
-	@Column(name="PROVINCE")
+	
 	private String province;
-	@Column(name="REGION")
+	
 	private String region;
 
 	public Address() {
@@ -44,14 +38,6 @@ public class Address implements Serializable {
 
 	public void setCap(int cap) {
 		this.cap = cap;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public int getCap() {

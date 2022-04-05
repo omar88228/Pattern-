@@ -1,27 +1,31 @@
-package app;
+package it.omar.app;
+import java.util.ArrayList;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class main {
+import it.omar.builder.BuilderAddress;
+import it.omar.builder.BuilderImmobile;
+import it.omar.dao.ImmobileDaoImpl;
+import it.omar.entity.Address;
+import it.omar.entity.Immobile;
+public class Main {
 
 	public static void main(String[] args) {
-		 EntityManagerFactory emf = Persistence
-	                .createEntityManagerFactory("JPADemo");
-	        EntityManager em = emf.createEntityManager();
-	        createStudent(19, "oma", "oues", 100,em);
-            createStudent(11, "kkk", "zzzzzz", 98,em);
-            createStudent(17, "difla", "Tyagraj", 99,em);
+	     
+    		Singleton sing = Singleton.getInstance();
+    		ArrayList<String> data = sing.getList();
+    		ImmobileFacade facade = new ImmobileFacade();
+    		ArrayList<Immobile> immobili = facade.createImmobile(data);
+    		ImmobileDaoImpl daoImpl = new ImmobileDaoImpl();
+    		for (Immobile immobile : immobili) {
+    			System.out.println(immobile.estateType());
+				System.out.println(daoImpl.addImmobile(immobile));
+			}
+    		
+
 	}
-	   private static void createStudent(int id, String firstName, String lastName, int marks,EntityManager em) {
-
-           em.getTransaction().begin();
-
-           Student student = new Student(id, firstName, lastName, marks);
-
-           em.persist(student);
-
-           em.getTransaction().commit();
-
+	  
    }
-}
+
