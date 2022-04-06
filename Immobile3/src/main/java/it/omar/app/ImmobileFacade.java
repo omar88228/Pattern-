@@ -25,7 +25,6 @@ public class ImmobileFacade {
 		this.builderAddress = new BuilderAddress();
 		this.daoImpl = new ImmobileDaoImpl();
 	}
-
 	/**
 	 * extraction of the attribute values of the Immobile object from a list and its
 	 * creation
