@@ -3,9 +3,9 @@ import java.util.List;
 import it.omar.entity.Immobile;
 
 public interface IImmobileDao {
-	public boolean addImmobile(Immobile immobile);
-	public List<Immobile> showAllImmobili();
-	public Immobile findImmobileById(int immobileId);
-	public List<Immobile> findImmobiliBySurface(int immobileSurface);
+	public boolean add(Immobile immobile);
+	public List<Immobile> showAll();
+	public Immobile findById(int immobileId);
+	public List<Immobile> findBySurface(int immobileSurface);
 
 }

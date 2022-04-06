@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="builder.IBuilderAddress"/>
-    <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
-    <fullyQualifiedTypeName name="factory.FactoryImmobile"/>
-    <fullyQualifiedTypeName name="prove.Persona"/>
-    <fullyQualifiedTypeName name="prove.Studente"/>
-    <fullyQualifiedTypeName name="builder.IBuilderImmobile"/>
-    <fullyQualifiedTypeName name="entity.Villa"/>
-    <fullyQualifiedTypeName name="entity.Garage"/>
     <fullyQualifiedTypeName name="entity.Appartment"/>
     <fullyQualifiedTypeName name="entity.IPersona"/>
     <fullyQualifiedTypeName name="entity.Studente"/>
@@ -33,7 +25,6 @@
     <fullyQualifiedTypeName name="entity.RedCar"/>
     <fullyQualifiedTypeName name="entity.Car"/>
     <fullyQualifiedTypeName name="entity.Fiat"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
@@ -44,7 +35,6 @@
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="app.Facade"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
     <fullyQualifiedTypeName name="com.mysql.cj.Query"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
@@ -52,12 +42,22 @@
     <fullyQualifiedTypeName name="dao.ImmobileDaoImpl"/>
     <fullyQualifiedTypeName name="builder.BuilderAddress"/>
     <fullyQualifiedTypeName name="builder.BuilderImmobile"/>
-    <fullyQualifiedTypeName name="it.omar.dao.ImmobileDaoImpl"/>
     <fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
-    <fullyQualifiedTypeName name="it.omar.entity.Address"/>
     <fullyQualifiedTypeName name="it.omar.entity.Villa"/>
-    <fullyQualifiedTypeName name="it.omar.entity.Immobile"/>
     <fullyQualifiedTypeName name="it.omar.entity.IEstate"/>
     <fullyQualifiedTypeName name="it.omar.enumeration.Type"/>
     <fullyQualifiedTypeName name="it.omar.builder.IBuilderAddress"/>
+    <fullyQualifiedTypeName name="it.omar.entity.Garage"/>
+    <fullyQualifiedTypeName name="it.omar.entity.Address"/>
+    <fullyQualifiedTypeName name="it.omar.dao.AddressDaoImpl"/>
+    <fullyQualifiedTypeName name="it.omar.dao.ImmobileDaoImpl"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.Writer"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="it.omar.entity.Immobile"/>
 </qualifiedTypeNameHistroy>

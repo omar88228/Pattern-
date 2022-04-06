@@ -1,6 +1,5 @@
 package it.omar.builder;
 
-
 import it.omar.entity.Address;
 
 public interface IBuilderAddress {

@@ -14,7 +14,7 @@ public interface IBuilderImmobile {
 
 	IBuilderImmobile type(String type);
 	
-	IBuilderImmobile numberOfSwimmingpools(int numberOfSwimmingpools);
+	IBuilderImmobile numberOfSwimmingPools(int numberOfSwimmingpools);
 	
 	IBuilderImmobile gateType(String gateType);
 	

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"difel","c":"WriteTextFile","l":"main(String...)","u":"main(java.lang.String...)"},{"p":"difel","c":"WriteTextFile","l":"setContents(File, String)","u":"setContents(java.io.File,java.lang.String)"},{"p":"difel","c":"WriteTextFile","l":"WriteTextFile()","u":"%3Cinit%3E()"}];updateSearchResults();

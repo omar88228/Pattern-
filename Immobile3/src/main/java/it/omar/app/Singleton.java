@@ -5,6 +5,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * a singleton class which allows the creation of a singleton who reads a local
+ * file that contains the immobile list
+ * @author o.oueslati
+ */
 public class Singleton {
 
 	private static Singleton singleton;
@@ -21,6 +26,12 @@ public class Singleton {
 		return singleton;
 	}
 
+	/**
+	 * reads a local file that contains the immobile list and adds it to attributes
+	 * list
+	 * @exception FileNotFoundException if file does not exist.
+	 * @exception IOException           if stream to file cannot be written to or closed.                                 
+	 */
 	public void readFile() {
 
 		BufferedReader reader;
@@ -38,6 +49,9 @@ public class Singleton {
 		}
 	}
 
+	/** 
+	 * @return the list that contains the immobile
+	 */
 	public ArrayList<String> getList() {
 		return list;
 	}
