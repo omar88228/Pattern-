@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"it.omar.app","c":"Singleton","l":"getInstance()"},{"p":"it.omar.app","c":"Singleton","l":"getList()"},{"p":"it.omar.app","c":"Singleton","l":"readFile()"}];updateSearchResults();

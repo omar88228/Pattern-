@@ -27,9 +27,9 @@ public class Singleton {
 	}
 
 	/**
-	 * reads a local file that contains the immobile list and adds it to attributes
+	 * reads a local file that contains the immobile list and adds it to attributes 
 	 * list
-	 * @exception FileNotFoundException if file does not exist.
+	 * @exception java.io.FileNotFoundException if file does not exist.
 	 * @exception IOException           if stream to file cannot be written to or closed.                                 
 	 */
 	public void readFile() {

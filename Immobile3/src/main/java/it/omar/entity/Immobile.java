@@ -24,7 +24,8 @@ public class Immobile implements IEstate,Serializable {
     @Column(name="ADDRESS")
     @Embedded
 	private Address address;
-	
+    @ManyToOne
+	private ImmobileOwner immobileOwner ;
 	public Immobile(int surface, int localNumber, Address address, Type type) {
 		super();
 		this.surface = surface;
@@ -67,6 +68,14 @@ public class Immobile implements IEstate,Serializable {
 
 	public void setType(Type type) {
 		this.type = type;
+	}
+
+	public ImmobileOwner getImmobileOwner() {
+		return immobileOwner;
+	}
+
+	public void setImmobileOwner(ImmobileOwner immobileOwner) {
+		this.immobileOwner = immobileOwner;
 	}
 
 	@Override

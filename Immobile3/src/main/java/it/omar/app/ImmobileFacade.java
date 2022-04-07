@@ -8,10 +8,12 @@ import it.omar.builder.BuilderImmobile;
 import it.omar.dao.ImmobileDaoImpl;
 import it.omar.entity.Address;
 import it.omar.entity.Immobile;
+import it.omar.entity.ImmobileOwner;
 
 /**
  * manage the extraction of the data of the immobile object and his creation
  * estate objects insertion of the object inside the data base
+ * 
  * @author o.oueslati
  */
 public class ImmobileFacade {
@@ -25,9 +27,11 @@ public class ImmobileFacade {
 		this.builderAddress = new BuilderAddress();
 		this.daoImpl = new ImmobileDaoImpl();
 	}
+
 	/**
 	 * extraction of the attribute values of the Immobile object from a list and its
 	 * creation
+	 * 
 	 * @param data list that contains the names of the attributes and their value
 	 * @return list of Immobile object
 	 */
@@ -113,16 +117,18 @@ public class ImmobileFacade {
 	}
 
 	/**
-	 * extract immobile object from list and save it in data base
-	 * @param listImmobile list of immobile object
+	 * save immobile object in data base
+	 * 
+	 * @param immobile object
 	 * @return true if immobile Successfully saved
 	 */
-	public boolean createImmobile(Immobile immobile) {
+	public Immobile createImmobile(Immobile immobile) {
 		return daoImpl.add(immobile);
 	}
 
 	/**
 	 * show all immobile object in data base
+	 * 
 	 * @return list of immobili
 	 */
 	public List<Immobile> showAllImmobili() {
@@ -131,6 +137,7 @@ public class ImmobileFacade {
 
 	/**
 	 * find immobile by surface
+	 * 
 	 * @param immobile surface
 	 * @return list of immobili
 	 */
@@ -140,9 +147,18 @@ public class ImmobileFacade {
 
 	/**
 	 * find immobile by id
+	 * 
 	 * @return immobile object
 	 */
 	public Immobile findImmobileById(int id) {
 		return daoImpl.findById(id);
+	}
+
+	public void addOwner(ImmobileOwner immobileOwner) {
+		daoImpl.addOwner(immobileOwner);
+	}
+
+	public ImmobileOwner findOwnerById(int idOwner) {
+		return daoImpl.findOwnerById(idOwner);
 	}
 }

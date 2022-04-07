@@ -1,7 +1,11 @@
 package it.omar.app;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import it.omar.entity.Immobile;
+import it.omar.entity.ImmobileOwner;
 
 public class Main {
 
@@ -10,18 +14,23 @@ public class Main {
 		Singleton sing = Singleton.getInstance();
 		ArrayList<String> data = sing.getList();
 		ImmobileFacade facade = new ImmobileFacade();
+
 		ArrayList<Immobile> immobili = facade.extractObjectFromList(data);
 
+		int i = 0;
 		for (Immobile immobile : immobili) {
-			System.out.println(facade.createImmobile(immobile));
+			ImmobileOwner owner = new ImmobileOwner();
+			List<Immobile> list = new ArrayList<Immobile>();
+			list.add(immobile);
+			owner.setLastName("oueslati" + i);
+			i++;
+			owner.setName("oma");
+			owner.setImmobiles(list);
+			immobile.setImmobileOwner(owner);
+			facade.addOwner(owner);
 		}
-		for (Immobile immobile : facade.showAllImmobili()) {
-			System.out.println(immobile.estateType());
-		}
-		for (Immobile immobile : facade.findImmobileBySurface(100)) {
-			System.out.println(immobile.estateType());
-		}
-		System.out.println(facade.findImmobileById(1).estateType());
+
+		System.out.println(facade.findOwnerById(2).getImmobiles().get(0).estateType());
 
 	}
 

@@ -230,11 +230,6 @@
 				<item key="destdir" value="C:\Users\o.oueslati\eclipse-workspace\Immobile\doc"/>
 				<item key="antpath" value="C:\Users\o.oueslati\eclipse-workspace\Immobile\javadoc.xml"/>
 			</section>
-			<section name="JPA_Hibernate_Annotations">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\Users\o.oueslati\Desktop\JPA_Hibernate_Annotations\doc"/>
-				<item key="antpath" value="C:\Users\o.oueslati\Desktop\JPA_Hibernate_Annotations\javadoc.xml"/>
-			</section>
 			<section name="prove">
 				<item key="href" value=""/>
 				<item key="destdir" value="C:\Users\o.oueslati\eclipse-workspace\prove\doc"/>
