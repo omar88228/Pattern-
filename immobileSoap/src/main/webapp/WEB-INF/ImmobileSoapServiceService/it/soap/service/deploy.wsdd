@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ImmobileSoapServiceService WSDL service -->
+
+  <service name="ImmobileSoapService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.soap.it"/>
+      <parameter name="wsdlServiceElement" value="ImmobileSoapServiceService"/>
+      <parameter name="schemaQualified" value="http://entity.soap.it,http://service.soap.it"/>
+      <parameter name="wsdlServicePort" value="ImmobileSoapService"/>
+      <parameter name="className" value="it.soap.service.ImmobileSoapService"/>
+      <parameter name="wsdlPortType" value="ImmobileSoapService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://service.soap.it" xmlns:retNS="http://service.soap.it" xmlns:rtns="http://entity.soap.it" name="findImmobileById" qname="operNS:findImmobileById" returnQName="retNS:findImmobileByIdReturn" returnType="rtns:Immobile" soapAction="">
+        <parameter xmlns:pns="http://service.soap.it" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:id" type="tns:int"/>
+      </operation>
+      <operation xmlns:operNS="http://service.soap.it" xmlns:retNS="http://service.soap.it" xmlns:rtns="http://service.soap.it" xmlns:tns="http://service.soap.it" name="showAllImmobile" qname="operNS:showAllImmobile" returnQName="retNS:showAllImmobileReturn" returnType="rtns:ArrayOf_xsd_anyType" returnItemQName="tns:item" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://service.soap.it" xmlns:retNS="http://service.soap.it" xmlns:rtns="http://entity.soap.it" name="addImmobile" qname="operNS:addImmobile" returnQName="retNS:addImmobileReturn" returnType="rtns:Immobile" soapAction="">
+        <parameter xmlns:pns="http://service.soap.it" xmlns:tns="http://entity.soap.it" qname="pns:immobile" type="tns:Immobile"/>
+      </operation>
+      <operation xmlns:operNS="http://service.soap.it" xmlns:retNS="http://service.soap.it" xmlns:rtns="http://service.soap.it" xmlns:tns="http://service.soap.it" name="findImmobileBySurface" qname="operNS:findImmobileBySurface" returnQName="retNS:findImmobileBySurfaceReturn" returnType="rtns:ArrayOf_xsd_anyType" returnItemQName="tns:item" soapAction="">
+        <parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" xmlns:pns="http://service.soap.it" qname="pns:surface" type="tns:int"/>
+      </operation>
+      <parameter name="allowedMethods" value="findImmobileBySurface showAllImmobile findImmobileById addImmobile"/>
+
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;addImmobileResponse" type="java:it.soap.service.AddImmobileResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;findImmobileById" type="java:it.soap.service.FindImmobileById" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;findImmobileBySurfaceResponse" type="java:it.soap.service.FindImmobileBySurfaceResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;showAllImmobile" type="java:it.soap.service.ShowAllImmobile" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://entity.soap.it" qname="ns:Immobile" type="java:it.soap.entity.Immobile" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://entity.soap.it" qname="ns:Address" type="java:it.soap.entity.Address" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;showAllImmobileResponse" type="java:it.soap.service.ShowAllImmobileResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;addImmobile" type="java:it.soap.service.AddImmobile" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <arrayMapping xmlns:ns="http://service.soap.it" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema" qname="ns:ArrayOf_xsd_anyType" type="java:java.lang.Object[]" innerType="cmp-ns:anyType" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;findImmobileByIdResponse" type="java:it.soap.service.FindImmobileByIdResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://service.soap.it" qname="ns:&gt;findImmobileBySurface" type="java:it.soap.service.FindImmobileBySurface" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

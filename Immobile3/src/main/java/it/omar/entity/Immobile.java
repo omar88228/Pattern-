@@ -3,6 +3,9 @@ package it.omar.entity;
 import java.io.Serializable;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Positive;
 
 import it.omar.enumeration.Type;
 @Entity
@@ -16,8 +19,11 @@ public class Immobile implements IEstate,Serializable {
 	@Column(name="IMMOBILE_ID")
 	private int id ;
 	@Column(name="SURFACE")
+	@Min(value = 20, message = "surface should not be less than 18")
+    @Max(value = 300, message = "surface should not be greater than 300")
 	private int surface;
 	@Column(name="LOCAL_NUMBER")
+	@Positive
 	private int localNumber;
     @Enumerated(EnumType.STRING)
 	private Type type;

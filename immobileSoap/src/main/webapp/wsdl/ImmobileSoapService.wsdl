@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.soap.it" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service.soap.it" xmlns:intf="http://service.soap.it" xmlns:tns1="http://entity.soap.it" xmlns:tns2="http://enumeration.soap.it" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://service.soap.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://enumeration.soap.it"/>
+   <import namespace="http://entity.soap.it"/>
+   <element name="findImmobileById">
+    <complexType>
+     <sequence>
+      <element name="id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findImmobileByIdResponse">
+    <complexType>
+     <sequence>
+      <element name="findImmobileByIdReturn" type="tns1:Immobile"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="showAllImmobile">
+    <complexType/>
+   </element>
+   <element name="showAllImmobileResponse">
+    <complexType>
+     <sequence>
+      <element name="showAllImmobileReturn" type="impl:ArrayOf_xsd_anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_xsd_anyType">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:anyType"/>
+    </sequence>
+   </complexType>
+   <element name="addImmobile">
+    <complexType>
+     <sequence>
+      <element name="immobile" type="tns1:Immobile"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addImmobileResponse">
+    <complexType>
+     <sequence>
+      <element name="addImmobileReturn" type="tns1:Immobile"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findImmobileBySurface">
+    <complexType>
+     <sequence>
+      <element name="surface" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findImmobileBySurfaceResponse">
+    <complexType>
+     <sequence>
+      <element name="findImmobileBySurfaceReturn" type="impl:ArrayOf_xsd_anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://entity.soap.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://service.soap.it"/>
+   <import namespace="http://enumeration.soap.it"/>
+   <complexType name="Address">
+    <sequence>
+     <element name="cap" type="xsd:int"/>
+     <element name="city" nillable="true" type="xsd:string"/>
+     <element name="province" nillable="true" type="xsd:string"/>
+     <element name="region" nillable="true" type="xsd:string"/>
+     <element name="street" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="Immobile">
+    <sequence>
+     <element name="address" nillable="true" type="tns1:Address"/>
+     <element name="id" type="xsd:int"/>
+     <element name="localNumber" type="xsd:int"/>
+     <element name="surface" type="xsd:int"/>
+     <element name="type" nillable="true" type="xsd:anyType"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="findImmobileByIdResponse">
+
+      <wsdl:part element="impl:findImmobileByIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addImmobileResponse">
+
+      <wsdl:part element="impl:addImmobileResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addImmobileRequest">
+
+      <wsdl:part element="impl:addImmobile" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="showAllImmobileRequest">
+
+      <wsdl:part element="impl:showAllImmobile" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findImmobileBySurfaceRequest">
+
+      <wsdl:part element="impl:findImmobileBySurface" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findImmobileBySurfaceResponse">
+
+      <wsdl:part element="impl:findImmobileBySurfaceResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findImmobileByIdRequest">
+
+      <wsdl:part element="impl:findImmobileById" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="showAllImmobileResponse">
+
+      <wsdl:part element="impl:showAllImmobileResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ImmobileSoapService">
+
+      <wsdl:operation name="findImmobileById">
+
+         <wsdl:input message="impl:findImmobileByIdRequest" name="findImmobileByIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findImmobileByIdResponse" name="findImmobileByIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="showAllImmobile">
+
+         <wsdl:input message="impl:showAllImmobileRequest" name="showAllImmobileRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:showAllImmobileResponse" name="showAllImmobileResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addImmobile">
+
+         <wsdl:input message="impl:addImmobileRequest" name="addImmobileRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addImmobileResponse" name="addImmobileResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findImmobileBySurface">
+
+         <wsdl:input message="impl:findImmobileBySurfaceRequest" name="findImmobileBySurfaceRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findImmobileBySurfaceResponse" name="findImmobileBySurfaceResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ImmobileSoapServiceSoapBinding" type="impl:ImmobileSoapService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="findImmobileById">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findImmobileByIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findImmobileByIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="showAllImmobile">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="showAllImmobileRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="showAllImmobileResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addImmobile">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addImmobileRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addImmobileResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findImmobileBySurface">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findImmobileBySurfaceRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findImmobileBySurfaceResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ImmobileSoapServiceService">
+
+      <wsdl:port binding="impl:ImmobileSoapServiceSoapBinding" name="ImmobileSoapService">
+
+         <wsdlsoap:address location="http://localhost:8080/immobileSoap/services/ImmobileSoapService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

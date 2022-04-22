@@ -22,9 +22,9 @@ public class Main {
 			ImmobileOwner owner = new ImmobileOwner();
 			List<Immobile> list = new ArrayList<Immobile>();
 			list.add(immobile);
-			owner.setLastName("oueslati" + i);
+			owner.setLastName("oueslati " + i);
 			i++;
-			owner.setName("oma");
+			owner.setName(null);
 			owner.setImmobiles(list);
 			immobile.setImmobileOwner(owner);
 			facade.addOwner(owner);

@@ -7,17 +7,22 @@ import javax.persistence.*;
 import javax.validation.constraints.*;
 
 @Entity
+@Table(name = "T_IMMOBILE_OWNER")
 public class ImmobileOwner implements Serializable {
 
 	private static final long serialVersionUID = -7627019662340966630L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "OWNER_ID")
 	private int id;
 
-	@Size(min = 10, max = 200, message = "About Me must be between 10 and 200 characters")
+	@Column(name = "OWNER_SIZE" ,length = 5)
 	private String name;
-	@Column(name = "OWNER_LAST_NAME")
+	
+	@Column(name = "OWNER_LAST_NAME",nullable = true)
+	
 	private String lastName;
+	
 	@OneToMany(mappedBy = "immobileOwner", cascade = CascadeType.ALL)
 	private List<Immobile> immobiles;
 
