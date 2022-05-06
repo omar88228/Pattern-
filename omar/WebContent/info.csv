@@ -1,4 +1,0 @@
-type,localNumber,floor,street,city,province,region,cap,surface,numberOfSwimmingpools,gateType
-VILLA,3,,strada cerreto la croce 54,latina,roma,lazio,04100,150,5,scorrevole
-GARAGE,5,,strada cerreto la croce 54,latina,roma,lazio,04100,60,,scorrevole
-APARTMENT,4,8,strada cerreto la croce 54,latina,roma,lazio,04100,100,,,

@@ -1,0 +1,4 @@
+it\immobile\configuration\ImmobileConfiguration.class
+it\immobile\configuration\ImmobileInitializer.class
+it\immobile\service\ImmobileService.class
+it\immobile\controller\Controller.class

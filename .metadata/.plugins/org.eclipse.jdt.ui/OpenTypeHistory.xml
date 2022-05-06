@@ -3,12 +3,11 @@
     <typeInfo handle="=Design Pattern/src&lt;Design_Pattern_ProtoType{impiegato.java[impiegato" modifiers="1025" timestamp="1647957082446"/>
     <typeInfo handle="=Immobile/C:\/Users\/o.oueslati\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\/jre\/lib\/jrt-fs.jar`java.desktop=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/&lt;javax.swing(Icon.class[Icon" modifiers="1537" timestamp="1643713866000"/>
     <typeInfo handle="=Immobile/src\/main\/java&lt;builder{BuilderImmobile.java[BuilderImmobile" modifiers="1" timestamp="1648555648786"/>
-    <typeInfo handle="=omar/src\/main\/java&lt;factory{IFactoryImmobile.java[IFactoryImmobile" modifiers="513" timestamp="1648554348510"/>
     <typeInfo handle="=factory/src\/main\/java&lt;methodeFactory{IFactory.java[IFactory" modifiers="513" timestamp="1648632517655"/>
     <typeInfo handle="=factory/src\/main\/java&lt;entity{Animale.java[Animale" modifiers="1025" timestamp="1648641332207"/>
     <typeInfo handle="=Adapter/src\/main\/java&lt;entity{Vehicle.java[Vehicle" modifiers="513" timestamp="1648801507615"/>
     <typeInfo handle="=Decorator/src\/main\/java&lt;decorator{PaninoDecorator.java[PaninoDecorator" modifiers="1" timestamp="1648821660484"/>
     <typeInfo handle="=Bridge/src\/main\/java&lt;entity{CarColor.java[CarColor" modifiers="513" timestamp="1648822673777"/>
     <typeInfo handle="=Bridge/src\/main\/java&lt;entity{Car.java[Car" modifiers="1025" timestamp="1648823342378"/>
-    <typeInfo handle="=immobile4/C:\/Users\/o.oueslati\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\/jre\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1643713866000"/>
+    <typeInfo handle="=immobile-repository/C:\/Users\/o.oueslati\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/2.6.4\/spring-data-commons-2.6.4.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.nondependency=/=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-commons=/=/maven.version=/2.6.4=/=/maven.scope=/compile=/&lt;org.springframework.data.repository(CrudRepository.class[CrudRepository" modifiers="1537" timestamp="1651587333711"/>
 </typeInfoHistroy>

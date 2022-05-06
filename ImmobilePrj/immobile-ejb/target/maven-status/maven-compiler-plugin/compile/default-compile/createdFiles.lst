@@ -1,0 +1,7 @@
+it\immobile\entity\Immobile.class
+it\immobile\ejbSession\IImmobileLocal.class
+it\rest\enumeration\Type.class
+it\immobile\ejbSession\IAddressLocal.class
+it\immobile\ejbSession\ImmobileEjbImpl.class
+it\immobile\entity\Address.class
+it\immobile\ejbSession\AddressEjbImpl.class

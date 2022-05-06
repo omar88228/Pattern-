@@ -1,0 +1,6 @@
+it\immobile\repository\ImmobileRepository.class
+it\immobile\entity\Immobile.class
+it\rest\enumeration\Type.class
+it\immobile\entity\Address.class
+it\immobile\repository\AddressRepository.class
+it\immobile\configuration\AppConfig.class

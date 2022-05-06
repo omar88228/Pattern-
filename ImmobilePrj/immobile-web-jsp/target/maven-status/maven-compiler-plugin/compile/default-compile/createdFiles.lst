@@ -1,0 +1,6 @@
+it\immobile\controller\NewAddressServlet.class
+it\immobile\controller\AddressToImmobileServlet.class
+it\immobile\controller\HomeServlet.class
+it\immobile\controller\SelectByIdservlet.class
+it\immobile\controller\ImmobileListServlet.class
+it\immobile\controller\NewImmobileServlet.class

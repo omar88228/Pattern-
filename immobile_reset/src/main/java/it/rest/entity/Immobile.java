@@ -4,14 +4,11 @@ import java.io.Serializable;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.wordnik.swagger.annotations.ApiModel;
-
 import it.rest.enumeration.Type;
 
 @Entity
 @Table( name= "IMMOBILE")
 @XmlRootElement
-@ApiModel(description = "An item which may be available in our grocery store")
 public class Immobile implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
